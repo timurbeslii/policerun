@@ -40,6 +40,10 @@ public class PlayerMovement : MonoBehaviour
             Move();
             SetMouseDelta();
         }
+        if (!isOnDroneTile)
+        {
+             transform.localRotation = Quaternion.Lerp(transform.localRotation, Quaternion.identity, 50f * Time.deltaTime);
+        }
        
     }
     public void SpeedUpThePlayer()
@@ -87,11 +91,11 @@ public class PlayerMovement : MonoBehaviour
     private void Move()
     {
         Vector3 movePos = Vector3.zero;
-        float moveSpeed = 0.01f;
+        float moveSpeed = 0.0075f;
 
         if (SystemInfo.deviceType == DeviceType.Desktop)
         {
-            moveSpeed = 0.01f * 561 / Screen.width;
+            moveSpeed = 0.0075f * 561 / Screen.width;
         }
 
         movePos = Vector3.right * deltaPos.x * moveSpeed;

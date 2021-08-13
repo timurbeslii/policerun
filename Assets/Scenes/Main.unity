@@ -43538,7 +43538,7 @@ MonoBehaviour:
   Coin: {fileID: 1939156654}
   coinText: {fileID: 841597641}
   bg: {fileID: 1092713922}
-  isLose: 0
+  isLose: 1
 --- !u!1 &1475826040
 GameObject:
   m_ObjectHideFlags: 0
