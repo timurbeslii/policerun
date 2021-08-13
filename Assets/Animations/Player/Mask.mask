@@ -1,0 +1,159 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Mask
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000000000000000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: ROOT
+    m_Weight: 1
+  - m_Path: ROOT/TP
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP L Thigh
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP L Thigh/TP L Calf
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP L Thigh/TP L Calf/TP L Foot
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP L Thigh/TP L Calf/TP L Foot/TP L Toe0
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP R Thigh
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP R Thigh/TP R Calf
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP R Thigh/TP R Calf/TP R Foot
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP R Thigh/TP R Calf/TP R Foot/TP R Toe0
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP L Clavicle
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP L Clavicle/TP L UpperArm
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP L Clavicle/TP L UpperArm/TP
+      L Forearm
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP L Clavicle/TP L UpperArm/TP
+      L Forearm/TP L Hand
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP L Clavicle/TP L UpperArm/TP
+      L Forearm/TP L Hand/TP L Finger0
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP L Clavicle/TP L UpperArm/TP
+      L Forearm/TP L Hand/TP L Finger0/TP L Finger01
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP L Clavicle/TP L UpperArm/TP
+      L Forearm/TP L Hand/TP L Finger0/TP L Finger01/TP L Finger02
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP L Clavicle/TP L UpperArm/TP
+      L Forearm/TP L Hand/TP L Finger1
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP L Clavicle/TP L UpperArm/TP
+      L Forearm/TP L Hand/TP L Finger1/TP L Finger11
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP L Clavicle/TP L UpperArm/TP
+      L Forearm/TP L Hand/TP L Finger1/TP L Finger11/TP L Finger12
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP L Clavicle/TP L UpperArm/TP
+      L Forearm/TP L Hand/TP L Finger2
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP L Clavicle/TP L UpperArm/TP
+      L Forearm/TP L Hand/TP L Finger2/TP L Finger21
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP L Clavicle/TP L UpperArm/TP
+      L Forearm/TP L Hand/TP L Finger2/TP L Finger21/TP L Finger22
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP L Clavicle/TP L UpperArm/TP
+      L Forearm/TP L Hand/TP L Finger3
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP L Clavicle/TP L UpperArm/TP
+      L Forearm/TP L Hand/TP L Finger3/TP L Finger31
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP L Clavicle/TP L UpperArm/TP
+      L Forearm/TP L Hand/TP L Finger3/TP L Finger31/TP L Finger32
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP L Clavicle/TP L UpperArm/TP
+      L Forearm/TP L Hand/TP L Finger4
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP L Clavicle/TP L UpperArm/TP
+      L Forearm/TP L Hand/TP L Finger4/TP L Finger41
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP L Clavicle/TP L UpperArm/TP
+      L Forearm/TP L Hand/TP L Finger4/TP L Finger41/TP L Finger42
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP Neck
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP Neck/TP Head
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP R Clavicle
+    m_Weight: 0
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP R Clavicle/TP R UpperArm
+    m_Weight: 0
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP R Clavicle/TP R UpperArm/TP
+      R Forearm
+    m_Weight: 0
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP R Clavicle/TP R UpperArm/TP
+      R Forearm/TP R Hand
+    m_Weight: 0
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP R Clavicle/TP R UpperArm/TP
+      R Forearm/TP R Hand/TP R Finger0
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP R Clavicle/TP R UpperArm/TP
+      R Forearm/TP R Hand/TP R Finger0/TP R Finger01
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP R Clavicle/TP R UpperArm/TP
+      R Forearm/TP R Hand/TP R Finger0/TP R Finger01/TP R Finger02
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP R Clavicle/TP R UpperArm/TP
+      R Forearm/TP R Hand/TP R Finger1
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP R Clavicle/TP R UpperArm/TP
+      R Forearm/TP R Hand/TP R Finger1/TP R Finger11
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP R Clavicle/TP R UpperArm/TP
+      R Forearm/TP R Hand/TP R Finger1/TP R Finger11/TP R Finger12
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP R Clavicle/TP R UpperArm/TP
+      R Forearm/TP R Hand/TP R Finger2
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP R Clavicle/TP R UpperArm/TP
+      R Forearm/TP R Hand/TP R Finger2/TP R Finger21
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP R Clavicle/TP R UpperArm/TP
+      R Forearm/TP R Hand/TP R Finger2/TP R Finger21/TP R Finger22
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP R Clavicle/TP R UpperArm/TP
+      R Forearm/TP R Hand/TP R Finger3
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP R Clavicle/TP R UpperArm/TP
+      R Forearm/TP R Hand/TP R Finger3/TP R Finger31
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP R Clavicle/TP R UpperArm/TP
+      R Forearm/TP R Hand/TP R Finger3/TP R Finger31/TP R Finger32
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP R Clavicle/TP R UpperArm/TP
+      R Forearm/TP R Hand/TP R Finger4
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP R Clavicle/TP R UpperArm/TP
+      R Forearm/TP R Hand/TP R Finger4/TP R Finger41
+    m_Weight: 1
+  - m_Path: ROOT/TP/TP Pelvis/TP Spine/TP Spine1/TP Spine2/TP R Clavicle/TP R UpperArm/TP
+      R Forearm/TP R Hand/TP R Finger4/TP R Finger41/TP R Finger42
+    m_Weight: 1
+  - m_Path: TPBODY
+    m_Weight: 1
+  - m_Path: TPHEAD
+    m_Weight: 1
