@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
     public GameObject LevelFailedUI;
     public Level[] levels;
     public Image[] finalRankUI;
-
+    public TMP_Text levelText;
 
     public bool gameStarted,gameEnded,finishReached,finished;
     
@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetInt("badgeCount", 0);
         }
         PlayerPrefs.SetInt("badgeCountCollected", 0);
-        
+        levelText.text="LEVEL " + (PlayerPrefs.GetInt("levelIndex")+1).ToString();
     }
     
     public void ShowLevelEndUI(bool completed)

@@ -39143,6 +39143,7 @@ MonoBehaviour:
     rankBG: {fileID: 21300000, guid: aa93537a928e6734888f2d805847ff47, type: 3}
     rankFillImage: {fileID: 21300000, guid: b07aee2de6ce5304d9dfd7f7f3baac27, type: 3}
   finalRankUI: []
+  levelText: {fileID: 56760930}
   gameStarted: 0
   gameEnded: 0
   finishReached: 0
