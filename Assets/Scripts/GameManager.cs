@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
         }
         PlayerPrefs.SetInt("badgeCountCollected", 0);
         levelText.text="LEVEL " + (PlayerPrefs.GetInt("levelIndex")+1).ToString();
-        Application.targetFrameRate = 1000;
+        Application.targetFrameRate = 60;
     }
     
     public void ShowLevelEndUI(bool completed)
