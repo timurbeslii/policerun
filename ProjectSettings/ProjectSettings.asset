@@ -167,7 +167,7 @@ PlayerSettings:
   applicationIdentifier:
     iPhone: com.ottogames.arrestmania
   buildNumber:
-    iPhone: 1
+    iPhone: 3
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 19
   AndroidTargetSdkVersion: 0
