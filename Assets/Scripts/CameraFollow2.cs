@@ -9,7 +9,7 @@ public class CameraFollow2 : MonoBehaviour
     // camera will follow this object
     public Transform Target;
     //camera transform
-    public Transform camTransform;
+  
     // offset between camera and target
     public Vector3 Offset;
     public Vector3 FinishOffset;
@@ -22,10 +22,10 @@ public class CameraFollow2 : MonoBehaviour
     bool isFinished;
     private void Start()
     {
-        //  Offset = camTransform.position - Target.position;
+        //  Offset = transform.position - Target.position;
         if (transform.CompareTag("MainCamera"))
         {
-            isCamera = true;
+            //isCamera = true;
         }
     }
 
@@ -35,7 +35,7 @@ public class CameraFollow2 : MonoBehaviour
         {
             // update position
             Vector3 targetPosition = Target.position + Offset;
-            camTransform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, SmoothTime);
+            transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, SmoothTime);
 
             // update rotation
             if (isFinished)
@@ -72,7 +72,7 @@ public class CameraFollow2 : MonoBehaviour
         {
             // update position
             Vector3 targetPosition = Target.position + Offset;
-            camTransform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, SmoothTime);
+            transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, SmoothTime);
 
             // update rotation
             // transform.LookAt(Target);

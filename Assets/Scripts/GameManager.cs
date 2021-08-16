@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+
         if (_instance != null && _instance != this)
         {
             Destroy(this.gameObject);
@@ -46,6 +47,7 @@ public class GameManager : MonoBehaviour
         }
         PlayerPrefs.SetInt("badgeCountCollected", 0);
         levelText.text="LEVEL " + (PlayerPrefs.GetInt("levelIndex")+1).ToString();
+        Application.targetFrameRate = 1000;
     }
     
     public void ShowLevelEndUI(bool completed)

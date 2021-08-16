@@ -14,12 +14,8 @@ public class EventManager : MonoBehaviour
     public static EventManager eventManager { get { return _instance; } }
 
     public ParticleSystem poofFX;
-   
-    public MeshRenderer[] target_1_MeshRenderers;
-    public MeshRenderer[] target_2_MeshRenderers;
-    public MeshRenderer[] target_3_MeshRenderers;
-    public MeshRenderer[] target_4_MeshRenderers;
-    public MeshRenderer[] target_5_MeshRenderers;
+
+    public GameObject[] chains; 
 
     public Transform[] chainHoldPositions;
     public FixedJoint[] targetFixedJoints;
@@ -169,8 +165,9 @@ public class EventManager : MonoBehaviour
     {
         airCooldown = false;
     }
-    private void Start()
+    private IEnumerator Start()
     {
+        yield return new WaitForEndOfFrame();
         OnLevelStart();
     }
     public void OnObstacleTrigger()
@@ -277,39 +274,8 @@ public class EventManager : MonoBehaviour
 
     private void AppearTargetChains(int index,bool option)
     {
-        if (index == 1)
-        {
-            foreach (var mr in target_1_MeshRenderers)
-            {
-                mr.enabled = option;
-            }
-        }else if (index == 2)
-        {
-            foreach (var mr in target_2_MeshRenderers)
-            {
-                mr.enabled = option;
-            }
-        }else if (index == 3)
-        {
-            foreach (var mr in target_3_MeshRenderers)
-            {
-                mr.enabled = option;
-            }
-        }
-        else if (index == 4)
-        {
-            foreach (var mr in target_4_MeshRenderers)
-            {
-                mr.enabled = option;
-            }
-        }
-        else if (index == 5)
-        {
-            foreach (var mr in target_5_MeshRenderers)
-            {
-                mr.enabled = option;
-            }
-        }
+        chains[index - 1].GetComponent<LineRenderer>().enabled=option;
+
     }
 
     public void OnCriminalTrigger(Transform TriggeredCriminal)
