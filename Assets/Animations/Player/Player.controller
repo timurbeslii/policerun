@@ -325,7 +325,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Hang&Move
-  m_Speed: 2
+  m_Speed: 3
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -9137486367186121639}
@@ -338,7 +338,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -203655887218126122, guid: 944a756acae715844aaad22004f0ee7b,
+  m_Motion: {fileID: 1827226128182048838, guid: c6faff0907b5a2640819974f6173fd09,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 

@@ -10,6 +10,8 @@ public class LevelGenerator : MonoBehaviour
     [SerializeField] private Transform groundParent;
     [SerializeField] private GameObject finalTile;
     [SerializeField] private GameObject prisonTile;
+    [SerializeField] private MeshRenderer verticalFogMaterial;
+    [SerializeField] private GameObject[] planeBG;
     public int finalTileCount;
 
     public int groundTileCount;
@@ -17,23 +19,43 @@ public class LevelGenerator : MonoBehaviour
     public bool isMonkeyVariation;
     private int specialTileCooldown_temp;
     public int specialTileCooldown;
-    void Start()
+    private int levelIndex;
+   
+    IEnumerator Start()
     {
+        yield return new WaitForEndOfFrame();
+        int levelIndex = PlayerPrefs.GetInt("levelIndex");
+        if (levelIndex >= GameManager.gm.levels.Length-1)
+        {
+            levelIndex = Random.Range(5, GameManager.gm.levels.Length-1);
+        }
         specialTileCooldown_temp = specialTileCooldown;
         GenerateGround();
+        AdjustColors();
     }
   
 
+    private void AdjustColors()
+    {
+        
+       
 
+
+        RenderSettings.fogColor = GameManager.gm.levels[levelIndex].fogColor;
+       // RenderSettings.skybox = GameManager.gm.levels[levelIndex].skyBoxMaterial;
+        verticalFogMaterial.sharedMaterial = GameManager.gm.levels[levelIndex].verticalFogMaterial;
+        GameManager.gm.levels[levelIndex].planeBG.SetActive(true);
+
+    }
     private void GenerateGround()
     {
-        isDroneVariation = GameManager.gm.levels[PlayerPrefs.GetInt("levelIndex")].isDroneTileAvailable;
-        isMonkeyVariation = GameManager.gm.levels[PlayerPrefs.GetInt("levelIndex")].isMonkeyTileAvailable;
+        isDroneVariation = GameManager.gm.levels[levelIndex].isDroneTileAvailable;
+        isMonkeyVariation = GameManager.gm.levels[levelIndex].isMonkeyTileAvailable;
 
         Vector3 spawnPos = new Vector3();
         spawnPos=Vector3.zero;
         
-        for (int i = 0; i < GameManager.gm.levels[PlayerPrefs.GetInt("levelIndex")].levelTileLength; i++)
+        for (int i = 0; i < GameManager.gm.levels[levelIndex].levelTileLength; i++)
         {
           
             if (Random.Range(0, 1) == 0 &&  i > 2)
@@ -84,8 +106,8 @@ public class LevelGenerator : MonoBehaviour
         }
 
 
-        spawnPos.z -= groundTileLength;
-        for (int i =0; i < GameManager.gm.levels[PlayerPrefs.GetInt("levelIndex")].levelEndTileLength ; i++)
+        //spawnPos.z -= groundTileLength;
+        for (int i =0; i < GameManager.gm.levels[levelIndex].levelEndTileLength ; i++)
         {
           
         

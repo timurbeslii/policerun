@@ -23,8 +23,8 @@ Material:
     m_TexEnvs:
     - _AlbedoMap:
         m_Texture: {fileID: 2800000, guid: db3279842c3b83b4f80f7c2e9e75b828, type: 3}
-        m_Scale: {x: 0.35, y: 1}
-        m_Offset: {x: -0.16, y: 0}
+        m_Scale: {x: -0.99, y: 1}
+        m_Offset: {x: -11.16, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -114,7 +114,7 @@ Material:
     - _Parallax: 0.02
     - _RenderFace: 2
     - _RenderPriority: 0
-    - _Saturation: 1.77
+    - _Saturation: 0.87
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1

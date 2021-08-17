@@ -76,6 +76,10 @@ public class CameraFollow2 : MonoBehaviour
 
             // update rotation
             // transform.LookAt(Target);
+            if (isFinished)
+            {
+                transform.LookAt(Target);
+            }
         }
     }
 }

@@ -8,8 +8,9 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Environment_Map
-  m_Shader: {fileID: 4800000, guid: 62ec4df7b9bdb594ebec618fa399cb6f, type: 3}
-  m_ShaderKeywords: _MK_ALBEDO_MAP _MK_COLOR_GRADING_FINAL_OUTPUT
+  m_Shader: {fileID: 4800000, guid: fedf1067191c49548ad94e6287a8610d, type: 3}
+  m_ShaderKeywords: _MK_ALBEDO_MAP _MK_COLOR_GRADING_FINAL_OUTPUT _MK_OUTLINE_DATA_UV7
+    _MK_OUTLINE_NOISE
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -65,6 +66,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _OutlineMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -80,7 +85,7 @@ Material:
     - _Blend: 0
     - _BlendDst: 0
     - _BlendSrc: 1
-    - _Brightness: 1.48
+    - _Brightness: 1.88
     - _BumpScale: 1
     - _ColorGrading: 2
     - _Contrast: 1.11
@@ -100,10 +105,17 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _OptionsTab: 1
+    - _Outline: 1
+    - _OutlineData: 1
+    - _OutlineFadeMax: 2
+    - _OutlineFadeMin: 0.25
+    - _OutlineNoise: 1
+    - _OutlineSize: 29.19
+    - _OutlineTab: 1
     - _Parallax: 0.02
     - _RenderFace: 2
     - _RenderPriority: 0
-    - _Saturation: 0.6
+    - _Saturation: 0.59
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -128,4 +140,5 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DissolveBorderColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}

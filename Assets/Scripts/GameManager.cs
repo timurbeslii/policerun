@@ -75,6 +75,7 @@ public class GameManager : MonoBehaviour
     public void RestartButton()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        
     }
    
 
@@ -104,4 +105,10 @@ public class Level
     public float rankFillAmountAtStart;
     public Sprite rankBG;
     public Sprite rankFillImage;
+
+    public Material verticalFogMaterial;
+    public Material skyBoxMaterial;
+    public Color cameraBackgroundColor;
+    public Color fogColor;
+    public GameObject planeBG;
 }
