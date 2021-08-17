@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -54,18 +54,18 @@ public class GameManager : MonoBehaviour
     {
         if (completed)
         {
-            //ElephantSDK.Elephant.LevelCompleted(PlayerPrefs.GetInt("levelIndex"));
+            ElephantSDK.Elephant.LevelCompleted(PlayerPrefs.GetInt("levelIndex"));
             LevelCompletedUI.SetActive(true);
         }
         else
         {
-           // ElephantSDK.Elephant.LevelFailed(PlayerPrefs.GetInt("levelIndex"));
+            ElephantSDK.Elephant.LevelFailed(PlayerPrefs.GetInt("levelIndex"));
             LevelFailedUI.SetActive(true);
         }
     }
     public void StartLevel()
     {
-       // ElephantSDK.Elephant.LevelStarted(PlayerPrefs.GetInt("levelIndex"));
+       ElephantSDK.Elephant.LevelStarted(PlayerPrefs.GetInt("levelIndex"));
         SliderTutorial.SetActive(false);
         gameStarted = true;
         EventManager.eventManager.StartTheGame();
