@@ -54,26 +54,31 @@ public class GameManager : MonoBehaviour
     {
         if (completed)
         {
+            //ElephantSDK.Elephant.LevelCompleted(PlayerPrefs.GetInt("levelIndex"));
             LevelCompletedUI.SetActive(true);
         }
         else
         {
+           // ElephantSDK.Elephant.LevelFailed(PlayerPrefs.GetInt("levelIndex"));
             LevelFailedUI.SetActive(true);
         }
     }
     public void StartLevel()
     {
+       // ElephantSDK.Elephant.LevelStarted(PlayerPrefs.GetInt("levelIndex"));
         SliderTutorial.SetActive(false);
         gameStarted = true;
         EventManager.eventManager.StartTheGame();
     }
     public void NextButton()
     {
+       
         PlayerPrefs.SetInt("levelIndex",PlayerPrefs.GetInt("levelIndex") + 1);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     public void RestartButton()
     {
+      
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         
     }

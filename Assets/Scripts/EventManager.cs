@@ -6,6 +6,7 @@ using DG.Tweening;
 using RootMotion.Dynamics;
 using static RootMotion.Dynamics.PuppetMaster;
 using TMPro;
+using MoreMountains.NiceVibrations;
 
 public class EventManager : MonoBehaviour
 {
@@ -172,19 +173,22 @@ public class EventManager : MonoBehaviour
     }
     public void OnObstacleTrigger()
     {
+
         mainCamera.DOShakeRotation(.25f, 1, 10, 90);
         if (currentArrestedCount <= 0)
         {
-           
-           
-                playerMovementScript.SlowDownAndDie();
+
+            MMVibrationManager.Haptic(HapticTypes.HeavyImpact);
+            playerMovementScript.SlowDownAndDie();
 
             
         }
         else
         {
+            MMVibrationManager.Haptic(HapticTypes.MediumImpact);
             if (GameManager.gm.finishReached && currentArrestedCount == 1)
             {
+
                 GameManager.gm.ShowLevelEndUI(true);
                 GameManager.gm.finished = true;
                 DoRandomDance();
@@ -301,6 +305,7 @@ public class EventManager : MonoBehaviour
             UpdateHandcuffAmountText();
             AppearTargetChains(currentArrestedCount,true);
             TriggeredCriminal.tag = "ArrestedCriminal";
+            MMVibrationManager.Haptic(HapticTypes.LightImpact);
             //   //Player still has the capacity to arrest new triggered criminal.
             //   
             //   currentArrestedCount++;
@@ -329,6 +334,7 @@ public class EventManager : MonoBehaviour
         }
         else
         {
+            MMVibrationManager.Haptic(HapticTypes.MediumImpact);
             // If the player cannot arrest anymore criminals because he/she reached the limit(3 by default), Then new triggered Criminals will be considered as Obstacles.
             TriggeredCriminal.GetComponent<Animator>().Play("attack");
             TriggeredCriminal.GetComponent<BoxCollider>().enabled = false;
