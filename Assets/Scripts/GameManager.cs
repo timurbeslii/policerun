@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
         }
         PlayerPrefs.SetInt("badgeCountCollected", 0);
         levelText.text="LEVEL " + (PlayerPrefs.GetInt("levelIndex")+1).ToString();
-        Application.targetFrameRate = 60;
+        Application.targetFrameRate = 1000;
     }
     
     public void ShowLevelEndUI(bool completed)
@@ -116,4 +116,13 @@ public class Level
     public Color cameraBackgroundColor;
     public Color fogColor;
     public GameObject planeBG;
+
+    public Material policeHairMat;
+    public Material policeUniformMat;
+    public Material policeBootMat;
+    public Material thiefMat;
+
+    public GameObject Environment;
+   
+
 }

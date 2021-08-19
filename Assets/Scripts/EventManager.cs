@@ -294,11 +294,13 @@ public class EventManager : MonoBehaviour
             if (TriggeredCriminal.CompareTag("FreeSlimCriminal")){
 
                 criminalPositions[currentCriminalPos].gameObject.SetActive(true);
+               
             }
             else if (TriggeredCriminal.CompareTag("FreeThickCriminal"))
             {
                 criminalPositions[currentCriminalPos+1].gameObject.SetActive(true);
             }
+            criminalPositions[currentCriminalPos].GetChild(1).GetComponent<SkinnedMeshRenderer>().sharedMaterial = GameManager.gm.levels[PlayerPrefs.GetInt("levelIndex")].thiefMat;
             currentCriminalPos += 2;
          
             currentArrestedCount++;

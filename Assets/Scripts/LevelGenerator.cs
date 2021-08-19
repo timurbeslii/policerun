@@ -20,16 +20,28 @@ public class LevelGenerator : MonoBehaviour
     private int specialTileCooldown_temp;
     public int specialTileCooldown;
     private int levelIndex;
-   
+
+    public SkinnedMeshRenderer policeHairMR;
+    
+    public SkinnedMeshRenderer policeUniformMR;
+
+    public SkinnedMeshRenderer policeBootMR;
+
+
+    
+
+
     IEnumerator Start()
     {
         yield return new WaitForEndOfFrame();
-        int levelIndex = PlayerPrefs.GetInt("levelIndex");
+        levelIndex = 5;//PlayerPrefs.GetInt("levelIndex");
         if (levelIndex >= GameManager.gm.levels.Length-1)
         {
             levelIndex = Random.Range(5, GameManager.gm.levels.Length-1);
         }
         specialTileCooldown_temp = specialTileCooldown;
+
+        yield return new WaitForEndOfFrame();
         GenerateGround();
         AdjustColors();
     }
@@ -37,9 +49,12 @@ public class LevelGenerator : MonoBehaviour
 
     private void AdjustColors()
     {
-        
-       
 
+
+        policeBootMR.sharedMaterial = GameManager.gm.levels[levelIndex].policeBootMat;
+        policeHairMR.sharedMaterial = GameManager.gm.levels[levelIndex].policeHairMat;
+        policeUniformMR.sharedMaterial = GameManager.gm.levels[levelIndex].policeUniformMat;
+        
 
         RenderSettings.fogColor = GameManager.gm.levels[levelIndex].fogColor;
        // RenderSettings.skybox = GameManager.gm.levels[levelIndex].skyBoxMaterial;

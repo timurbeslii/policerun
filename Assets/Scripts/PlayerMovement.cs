@@ -48,7 +48,7 @@ public class PlayerMovement : MonoBehaviour
     }
     public void SpeedUpThePlayer()
     {
-        DOTween.To(() => playerSpeed, x => playerSpeed = x, playerSpeed * 2, 10).OnComplete(() =>
+        DOTween.To(() => playerSpeed, x => playerSpeed = x, playerSpeed * 3, 10).OnComplete(() =>
         {
           
 
