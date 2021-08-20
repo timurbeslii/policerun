@@ -35,9 +35,9 @@ public class LevelGenerator : MonoBehaviour
     {
         yield return new WaitForEndOfFrame();
         levelIndex = PlayerPrefs.GetInt("levelIndex");
-        if (levelIndex >= GameManager.gm.levels.Length-1)
+        if (levelIndex > GameManager.gm.levels.Length-2)
         {
-            levelIndex = Random.Range(5, GameManager.gm.levels.Length-1);
+            levelIndex = Random.Range(5, GameManager.gm.levels.Length-2);
         }
         specialTileCooldown_temp = specialTileCooldown;
 
