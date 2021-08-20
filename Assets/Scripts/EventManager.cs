@@ -272,6 +272,7 @@ public class EventManager : MonoBehaviour
         foreach (var obj in criminalPositions)
         {
            obj.gameObject.SetActive(false);
+           obj.GetChild(1).GetComponent<SkinnedMeshRenderer>().sharedMaterial = GameManager.gm.levels[PlayerPrefs.GetInt("levelIndex")].thiefMat;
         }
         #endregion
     }
@@ -300,7 +301,7 @@ public class EventManager : MonoBehaviour
             {
                 criminalPositions[currentCriminalPos+1].gameObject.SetActive(true);
             }
-            criminalPositions[currentCriminalPos].GetChild(1).GetComponent<SkinnedMeshRenderer>().sharedMaterial = GameManager.gm.levels[PlayerPrefs.GetInt("levelIndex")].thiefMat;
+            
             currentCriminalPos += 2;
          
             currentArrestedCount++;

@@ -34,7 +34,7 @@ public class LevelGenerator : MonoBehaviour
     IEnumerator Start()
     {
         yield return new WaitForEndOfFrame();
-        levelIndex = 5;//PlayerPrefs.GetInt("levelIndex");
+        levelIndex = PlayerPrefs.GetInt("levelIndex");
         if (levelIndex >= GameManager.gm.levels.Length-1)
         {
             levelIndex = Random.Range(5, GameManager.gm.levels.Length-1);
@@ -49,7 +49,7 @@ public class LevelGenerator : MonoBehaviour
 
     private void AdjustColors()
     {
-
+        GameManager.gm.levels[levelIndex].Environment.SetActive(true);
 
         policeBootMR.sharedMaterial = GameManager.gm.levels[levelIndex].policeBootMat;
         policeHairMR.sharedMaterial = GameManager.gm.levels[levelIndex].policeHairMat;

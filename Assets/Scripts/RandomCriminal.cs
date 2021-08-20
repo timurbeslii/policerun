@@ -8,7 +8,7 @@ public class RandomCriminal : MonoBehaviour
     
     void Start()
     {
-        if (Random.Range(0, 5) > 1)
+        if (Random.Range(0, 5) > 2)
         {
             int index = Random.Range(0, CriminalTypes.Length);
             CriminalTypes[index].SetActive(true);
